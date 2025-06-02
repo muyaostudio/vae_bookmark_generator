@@ -92,7 +92,9 @@ def create_app():
 
     with gr.Blocks(title="播放器样式书签生成器", theme=gr.themes.Soft()) as app:
         gr.Markdown("# 许嵩播放器样式书签生成器")
-        gr.Markdown("选择专辑、歌曲、歌词，生成你的专属封面书签")
+        gr.Markdown("""
+        - **功能**：选择专辑、歌曲、歌词，生成你的专属封面书签
+        - **作者**：木尧工作室""")
 
         with gr.Row():
             with gr.Column(scale=1):
@@ -140,7 +142,7 @@ def create_app():
         gr.Markdown("""
         ### 使用说明
         1. 选择专辑、歌曲、歌词，点击“生成书签”即可生成
-        3. 书签像素为 2400x1200（尺寸为 12:5）
+        3. 书签像素为 2400x1000（尺寸为 12:5）
         4. 数据来自 `data/songs.json`，可自行增删
         """, height=200)
 
